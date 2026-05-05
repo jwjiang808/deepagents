@@ -1,0 +1,22 @@
+{
+  "sales": {
+    "description": "Daily sales transactions — one row per sale",
+    "columns": [
+      {"name": "id",       "type": "INTEGER", "description": "Primary key"},
+      {"name": "date",     "type": "TEXT",    "description": "Sale date (YYYY-MM-DD)"},
+      {"name": "region",   "type": "TEXT",    "description": "Sales region: North | South | East | West"},
+      {"name": "product",  "type": "TEXT",    "description": "Product name (FK to products.name)"},
+      {"name": "amount",   "type": "REAL",    "description": "Total sale amount in USD"},
+      {"name": "quantity", "type": "INTEGER", "description": "Number of units sold"}
+    ]
+  },
+  "products": {
+    "description": "Product catalogue",
+    "columns": [
+      {"name": "id",       "type": "INTEGER", "description": "Primary key"},
+      {"name": "name",     "type": "TEXT",    "description": "Product name"},
+      {"name": "category", "type": "TEXT",    "description": "Product category"},
+      {"name": "price",    "type": "REAL",    "description": "Unit price in USD"}
+    ]
+  }
+}
