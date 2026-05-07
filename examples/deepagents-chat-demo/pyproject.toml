@@ -1,0 +1,16 @@
+[project]
+name = "deepagents-chat-demo"
+version = "0.1.0"
+description = "Streamlit multi-turn chat demo for deepagents with markdown summaries"
+requires-python = ">=3.11"
+dependencies = [
+  "deepagents",
+  "streamlit>=1.36.0",
+  "langchain-core",
+  "langgraph",
+  "python-dotenv",
+  "pydantic>=2.7",
+]
+
+[tool.uv]
+package = false
